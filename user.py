@@ -15,6 +15,8 @@ import sqlite3
 
 #git status ==> to check the status of the files
 #git diff ==> to check the changes in files
+#copy paste from github from code 
+#git hub 
 
 def create_connection():
     try:
