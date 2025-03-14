@@ -1,8 +1,20 @@
 import csv
 import sqlite3
 
+#open git bash
 #git config --global user.name "Ankita Gharti Magar"
 #git config --global user.email "ankitagmgr@gmail.com"
+
+#git init ==> first time only==> to initialize the git repository 
+#git add .
+#git commit -m "Your commit message"
+
+#after each code change
+#git add .==> track the files 
+#git commit -m "Your commit message"
+
+#git status ==> to check the status of the files
+#git diff ==> to check the changes in files
 
 def create_connection():
     try:
