@@ -18,6 +18,20 @@ import sqlite3
 #copy paste from github from code 
 #git hub 
 
+INPUT_STRING="""
+Enter the option:
+    1.CREATE TABLE
+    2.DUMP user from csv INTO users TABLE
+    3.ADD new user INTO users TABLE
+    4.QUERY all users form TABLE
+    5.QUERY user by id from TABLE
+    6.QUERY specified no. of records from TABLE
+    7.DELETE all users
+    8.DELETE users by id
+    9.UPDATE user
+    10.Press any key to EXIT
+"""
+
 def create_connection():
     try:
         con=sqlite3.connect("users.sqlite3")
@@ -49,19 +63,7 @@ def create_table(con):
     print("User table was created successfully.")
 
 
-INPUT_STRING="""
-Enter the option:
-    1.CREATE TABLE
-    2.DUMP user from csv INTO users TABLE
-    3.ADD new user INTO users TABLE
-    4.QUERY all users form TABLE
-    5.QUERY user by id from TABLE
-    6.QUERY specified no. of records from TABLE
-    7.DELETE all users
-    8.DELETE users by id
-    9.UPDATE user
-    10.Press any key to EXIT
-"""
+
 def read_csv():
     users=[]
     with open("sample.csv","r") as f:
